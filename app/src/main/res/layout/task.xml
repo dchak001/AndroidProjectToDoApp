@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/task_bg"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="50dp">
+
+
+    <EditText
+        android:id="@+id/tname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Task name"
+        android:textColor="@color/task_txt"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <ImageButton
+        android:id="@+id/imName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/task_bg"
+        android:src="@drawable/name_image"
+        tools:src="@drawable/name_image" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80sp"
+    android:layout_marginTop="10dp">
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="Pick the due Date"
+        android:textColor="@color/task_txt"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <ImageButton
+        android:id="@+id/imaDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/oval_back"
+        android:onClick="pickDate"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        android:src="@drawable/calender"
+        tools:src="@drawable/calender" />
+
+</LinearLayout>
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="305dp"
+        android:layout_height="134dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Task Details"
+        android:inputType="textMultiLine"
+        android:textColor="@color/task_txt" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="70sp">
+
+
+    <TextView
+        android:id="@+id/hex"
+        android:layout_width="213dp"
+        android:layout_height="46dp"
+        android:layout_alignTop="@+id/details"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:hint="Pick a color"/>
+
+    <ImageButton
+        android:id="@+id/imaPal"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/oval_back"
+        android:onClick="pickColor"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:src="@drawable/palette"
+        tools:src="@drawable/palette" />
+
+
+
+</LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="20dp">
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Submit"
+          android:layout_marginLeft="70dp"
+          android:layout_marginTop="10dp"
+          android:onClick="submit"
+
+          android:textColor="@color/dash_bg"
+          android:background="@drawable/task_btn"/>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Discard"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="100dp"
+          android:onClick="discard"
+          android:background="@drawable/task_btn"
+          android:textColor="@color/dash_bg"/>
+  </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/imvbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginLeft="158dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/task_bg"
+        android:onClick="viewTasks"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:src="@drawable/view1"
+        tools:src="@drawable/view1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:text="Click to view Tasks"
+        android:textSize="18sp"
+        android:textColor="@color/task_txt"/>
+
+
+</LinearLayout>

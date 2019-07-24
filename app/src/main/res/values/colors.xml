@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FC085B</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#021E80</color>
+    <color name="main_bg">#B0F5E4</color>
+    <color name="main_btn">#F7E33A</color>
+    <color name="dash_bg">#FAFFFDFD</color>
+    <color name="task_bg">#FFCDE0</color>
+    <color name="dash">#FAFCD1B2</color>
+    <color name="task_txt">#FA4D096B</color>
+    <color name="login_bg">#FAA6F8B2</color>
+    <color name="login_btn">#FA791E02</color>
+    <color name="login_btn_br">#F0B421</color>
+    <color name="signup_bg">#F5F5A6</color>
+    <color name="signup_btn">#F0F76604</color>
+
+</resources>
