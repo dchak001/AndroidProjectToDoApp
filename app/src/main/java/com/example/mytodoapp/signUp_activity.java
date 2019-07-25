@@ -61,7 +61,7 @@ public class signUp_activity extends AppCompatActivity {
             idHolder.setText(Integer.toString(user.getId()));
             realm.commitTransaction();
             Log.i("signup","object stored");
-            Toast.makeText(mcontext, "Success", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(mcontext, "Success", Toast.LENGTH_SHORT).show();
 
 
 
